@@ -1,10 +1,10 @@
-NAME := AshteMobile
+NAME := YosfMobile
 PLATFORM := iphoneos
 SCHEMES := Feather
 TMP := $(TMPDIR)/$(NAME)
 STAGE := $(TMP)/stage
 APP := $(TMP)/Build/Products/Release-$(PLATFORM)
-CERT_JSON_URL := https://ashtemobile.site/pack.json
+CERT_JSON_URL := https://yosfmobile.site/pack.json
 
 .PHONY: all deps clean $(SCHEMES)
 
