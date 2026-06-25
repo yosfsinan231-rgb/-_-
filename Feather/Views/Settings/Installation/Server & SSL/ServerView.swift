@@ -1,6 +1,6 @@
 //
 //  ServerView.swift
-//  AshteMobile
+//  YosfMobile
 //
 //  Created by samara on 6.05.2025.
 //
@@ -48,12 +48,12 @@ extension ServerView {
 
 // MARK: - View
 struct ServerView: View {
-	@AppStorage("AshteMobile.ipFix") private var _ipFix: Bool = false
-	@AppStorage("AshteMobile.serverMethod") private var _serverMethod: Int = 0
+	@AppStorage("YosfMobile.ipFix") private var _ipFix: Bool = false
+	@AppStorage("YosfMobile.serverMethod") private var _serverMethod: Int = 0
 	private let _serverMethods: [String] = [.localized("Fully Local"), .localized("Semi Local")]
 	
 	private let _dataService = NBFetchService()
-	private let _serverPackUrl = "https://ashtemobile.site/pack.json"
+	private let _serverPackUrl = "https://YosfMobile.site/pack.json"
 	
 	// MARK: Body
 	var body: some View {
