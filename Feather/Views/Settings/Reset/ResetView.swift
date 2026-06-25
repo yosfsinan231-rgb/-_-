@@ -1,6 +1,6 @@
 //
 //  ResetView.swift
-//  AshteMobile
+//  YosfMobile
 //
 //  Created by samara on 19.06.2025.
 //
