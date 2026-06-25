@@ -1,6 +1,6 @@
 //
 //  SettingsTunnelView.swift
-//  AshteMobile (idevice)
+//  YosfMobile (idevice)
 //
 //  Created by samara on 29.04.2025.
 //
