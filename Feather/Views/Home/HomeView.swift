@@ -1,8 +1,8 @@
 //
 //  HomeView.swift
-//  AshteMobile
+//  YosfMobile
 //
-//  Created for AshteMobile
+//  Created for YosfMobile
 //  Modified to redirect downloads to external website
 //
 
@@ -29,13 +29,13 @@ struct HomeApp: Codable, Identifiable {
     var fullImageURL: URL? {
         guard let img = image else { return nil }
         if img.hasPrefix("http") { return URL(string: img) }
-        return URL(string: "https://ashtemobile.site/\(img)")
+        return URL(string: "https://YosfMobile.site/\(img)")
     }
     
     var fullBannerURL: URL? {
         if let ban = banner {
             if ban.hasPrefix("http") { return URL(string: ban) }
-            return URL(string: "https://ashtemobile.site/\(ban)")
+            return URL(string: "https://YosfMobile.site/\(ban)")
         }
         return fullImageURL
     }
@@ -48,13 +48,13 @@ struct HomeView: View {
     // --- بەشی وێنە لاکێشەییەکان ---
     @State private var currentBanner = 0
     let myCustomBanners = [
-        "https://ashtemobile.site/img/t.png",
-        "https://ashtemobile.site/img/i.png"
+        "https://YosfMobile.site/img/t.png",
+        "https://YosfMobile.site/img/i.png"
     ]
     
     let myCustomLinks = [
-        "https://t.me/ashtemobile",
-        "https://www.instagram.com/ashtemobile"
+        "https://t.me/Yosf_Mobile",
+        "https://www.instagram.com/YosfMobile"
     ]
     
     let timer = Timer.publish(every: 4, on: .main, in: .common).autoconnect()
