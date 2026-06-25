@@ -6,7 +6,7 @@ import IDeviceSwift
 
 // MARK: - View
 struct SettingsView: View {
-    @AppStorage("ashtemobile.selectedCert") private var _storedSelectedCert: Int = 0
+    @AppStorage("YosfMobile.selectedCert") private var _storedSelectedCert: Int = 0
     @State private var _currentIcon: String? = UIApplication.shared.alternateIconName
     
     // MARK: Fetch
@@ -34,7 +34,7 @@ struct SettingsView: View {
                 Section {
                     VStack(spacing: 16) {
                         // Profile Image with Modern Shadow
-                        AsyncImage(url: URL(string: "https://ashtemobile.site/a.png")) { image in
+                        AsyncImage(url: URL(string: "https://YosfMobile.site/a.png")) { image in
                             image.resizable()
                                 .scaledToFill()
                                 .frame(width: 90, height: 90)
@@ -52,13 +52,13 @@ struct SettingsView: View {
                         }
                         .padding(.top, 5)
                         
-                        Text("AshteMobile")
+                        Text("YosfMobile")
                             .font(.system(size: 24, weight: .bold, design: .rounded))
                         
                         HStack(spacing: 15) {
                             // Telegram Button
                             Button(action: {
-                                if let url = URL(string: "https://t.me/ashtemobile") {
+                                if let url = URL(string: "https://t.me/Yosf_Mobile") {
                                     UIApplication.shared.open(url)
                                 }
                             }) {
