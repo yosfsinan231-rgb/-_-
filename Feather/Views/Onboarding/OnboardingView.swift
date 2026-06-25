@@ -21,7 +21,7 @@ struct OnboardingView: View {
                 // Main content
                 VStack(spacing: 40) {
                     // App Icon 
-                    AsyncImage(url: URL(string: "https://ashtemobile.site/a.png")) { image in
+                    AsyncImage(url: URL(string: "https://YosfMobile.site/a.png")) { image in
                         image.resizable()
                             .scaledToFill()
                     } placeholder: {
@@ -37,7 +37,7 @@ struct OnboardingView: View {
                     
                     VStack(spacing: 16) {
                         // Title
-                        Text("Welcome to AshteMobile")
+                        Text("Welcome to YosfMobile")
                             .font(.system(size: 32, weight: .bold, design: .rounded))
                             .foregroundStyle(.primary)
                             .multilineTextAlignment(.center)
@@ -61,7 +61,7 @@ struct OnboardingView: View {
                         FeatureRow(
                             icon: "square.stack.3d.up.fill",
                             title: "Browse Sources",
-                            description: "Add sources to AshteMobile and install apps with ease",
+                            description: "Add sources to YosfMobile and install apps with ease",
                             delay: 0.2
                         )
                         
