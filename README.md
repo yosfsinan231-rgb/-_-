@@ -4,7 +4,7 @@
 
 This app allows you to install and manage applications contained in a single app, using certificate pairs and various installation techniques to allow apps to install to your device. This is an entirely stock application and uses built-in features to be able to do this!
 
-<img src="Images/aste.png" alt="YosfMobile Logo" width="200">
+<img src="Images/.png" alt="YosfMobile Logo" width="200">
 
 
 ### YosfMobile
