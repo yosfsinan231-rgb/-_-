@@ -14,6 +14,6 @@ This app allows you to install and manage applications contained in a single app
 install YosfMobile 👇
 
 
-<a href="https://YosfMobile.tututweak.com" target="_blank">
+<a href="https://ashtemobile.tututweak.com" target="_blank">
    <img src="https://github.com/CelloSerenity/altdirect/blob/main/assets/png/Download_Blue.png?raw=true" alt="Download .ipa" width="200">
 </a>
