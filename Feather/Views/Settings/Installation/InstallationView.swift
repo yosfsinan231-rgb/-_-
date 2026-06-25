@@ -1,6 +1,6 @@
 //
 //  InstallationView.swift
-//  AshteMobile
+//  YosfMobile
 //
 //  Created by samara on 3.06.2025.
 //
@@ -10,7 +10,7 @@ import NimbleViews
 
 // MARK: - View
 struct InstallationView: View {
-	@AppStorage("AshteMobile.installationMethod") private var _installationMethod: Int = 0
+	@AppStorage("YosfMobile.installationMethod") private var _installationMethod: Int = 0
 	@State private var _showMethodChangedAlert = false
 
 	private let _installationMethods: [String] = [
