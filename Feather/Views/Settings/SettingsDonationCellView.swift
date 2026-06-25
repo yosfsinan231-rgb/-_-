@@ -1,6 +1,6 @@
 //
 //  SettingsDonationCellView.swift
-//  AshteMobile
+//  YosfMobile
 //
 //  Created by samara on 30.04.2025.
 //
