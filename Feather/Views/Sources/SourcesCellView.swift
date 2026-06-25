@@ -1,6 +1,6 @@
 //
 //  SourcesCellView.swift
-//  AshteMobile
+//  YosfMobile
 //
 
 import SwiftUI
