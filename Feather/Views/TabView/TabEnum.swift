@@ -1,8 +1,8 @@
 //
 //  TabEnum.swift
-//  ashtemobile
+//  YosfMobile
 //
-//  Modified for AshteMobile
+//  Modified for YosfMobile
 //
 
 import SwiftUI
