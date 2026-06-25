@@ -1,6 +1,6 @@
 //
 //  SourceAppsCellView.swift
-//  AshteMobile
+//  YosfMobile
 //
 //  Created by samara on 3.05.2025.
 //
