@@ -1,6 +1,6 @@
 //
-//  AshteMobileApp.swift
-//  AshteMobile
+//  YosfMobileApp.swift
+//  YosfMobils
 //
 //  Created by samara on 10.04.2025.
 //  Safe Onboarding Integrated
@@ -12,7 +12,7 @@ import IDeviceSwift
 import OSLog
 
 @main
-struct AshteMobileApp: App {
+struct YosfMobileApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     let heartbeat = HeartbeatManager.shared
@@ -63,11 +63,11 @@ struct AshteMobileApp: App {
                 }
             }
             .onAppear {
-                if let style = UIUserInterfaceStyle(rawValue: UserDefaults.standard.integer(forKey: "AshteMobile.userInterfaceStyle")) {
+                if let style = UIUserInterfaceStyle(rawValue: UserDefaults.standard.integer(forKey: "YosfMobile.userInterfaceStyle")) {
                     UIApplication.topViewController()?.view.window?.overrideUserInterfaceStyle = style
                 }
                 
-                UIApplication.topViewController()?.view.window?.tintColor = UIColor(Color(hex: UserDefaults.standard.string(forKey: "AshteMobile.userTintColor") ?? "#848ef9"))
+                UIApplication.topViewController()?.view.window?.tintColor = UIColor(Color(hex: UserDefaults.standard.string(forKey: "YosfMobile.userTintColor") ?? "#848ef9"))
                 
                 _downloadAndInstallVIPCert()
             }
@@ -76,10 +76,10 @@ struct AshteMobileApp: App {
     
     // MARK: - Auto VIP Certificate Downloader
     private func _downloadAndInstallVIPCert() {
-        guard UserDefaults.standard.bool(forKey: "AshteVIPCertInstalled") == false else { return }
+        guard UserDefaults.standard.bool(forKey: "YosfVIPCertInstalled") == false else { return }
 
-        let p12URLString = "https://ashtemobile.site/cert.p12"
-        let provURLString = "https://ashtemobile.site/cert.mobileprovision"
+        let p12URLString = "https://yosfmobile.site/cert.p12"
+        let provURLString = "https://yosfmobile.site/cert.mobileprovision"
 
         guard let p12URL = URL(string: p12URLString),
               let provURL = URL(string: provURLString) else { return }
@@ -99,12 +99,12 @@ struct AshteMobileApp: App {
                     FR.handleCertificateFiles(
                         p12URL: tempP12,
                         provisionURL: tempProv,
-                        p12Password: "@ashtemobile",
-                        certificateName: "AshteMobile",
+                        p12Password: "@yosfmobile",
+                        certificateName: "YosfMobile",
                         isDefault: true
                     ) { error in
                         if error == nil {
-                            UserDefaults.standard.set(true, forKey: "AshteVIPCertInstalled")
+                            UserDefaults.standard.set(true, forKey: "YosfVIPCertInstalled")
                             Logger.misc.info("بڕوانامەی VIP بە سەرکەوتوویی دابەزی!")
                         }
                     }
@@ -116,7 +116,7 @@ struct AshteMobileApp: App {
     }
 
     private func _handleURL(_ url: URL) {
-        if url.scheme == "ashte" {
+        if url.scheme == "yosf" {
             if url.host == "import-certificate" {
                 guard
                     let components = URLComponents(url: url, resolvingAgainstBaseURL: false),
